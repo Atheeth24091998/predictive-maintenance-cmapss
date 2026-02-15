@@ -1,0 +1,22 @@
+artifact_path: file:///e:/SKILLS/predictive-maintenance-cmapss/predictive-maintenance-cmapss/notebooks/mlruns/1/models/m-fa7bfff92a344d608d43068d853841df/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.11.7
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 3.2.0
+mlflow_version: 3.9.0
+model_id: m-fa7bfff92a344d608d43068d853841df
+model_size_bytes: 1375756
+model_uuid: m-fa7bfff92a344d608d43068d853841df
+prompts: null
+run_id: 1988eb99c70e4aaaa17d9ebf5c93927f
+utc_time_created: '2026-02-15 08:37:49.830807'
