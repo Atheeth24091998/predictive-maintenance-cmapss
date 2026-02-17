@@ -67,11 +67,6 @@ def train_xgboost(
             rmse = np.sqrt(mean_squared_error(y_test, y_pred))
             mae = mean_absolute_error(y_test, y_pred)
 
-            # Log parameters
-            # mlflow.log_param("model", "XGBoost")
-            # mlflow.log_param("n_estimators", 500)
-            # mlflow.log_param("max_depth", 5)
-            # mlflow.log_param("learning_rate", 0.05)
             mlflow.xgboost.autolog()
 
             # Log metrics
@@ -118,10 +113,6 @@ def train_xgboost(
             mae = mean_absolute_error(y_test, y_pred)
 
             # Log parameters
-            # mlflow.log_param("model", "XGBoost")
-            # mlflow.log_param("n_estimators", 500)
-            # mlflow.log_param("max_depth", 5)
-            # mlflow.log_param("learning_rate", 0.05)
             mlflow.xgboost.autolog()
 
             # Log metrics

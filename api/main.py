@@ -5,12 +5,11 @@ import numpy as np
 
 app = FastAPI()
 
-model = joblib.load("notebooks/xgb_model.pkl")
+model = joblib.load("models/xgb_model.pkl")
 
 WINDOW_SIZE = 30
 N_FEATURES = 14
 EXPECTED_LENGTH = WINDOW_SIZE * N_FEATURES
-
 
 class PredictionRequest(BaseModel):
     data: list[float]
